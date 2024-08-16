@@ -3,37 +3,53 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.IO;
 using System.Windows;
-using INISelector.Utilities; // Adjust namespace as necessary
+using System.Windows.Controls;
+using INISelector.Utilities;
 
 namespace INISelector
 {
     public partial class MainWindow : Window
     {
-        public Dictionary<string, Dictionary<string, string>>? Data { get; set; }
-        public ObservableCollection<string> ComboBoxItems { get; set; }
-        public ObservableCollection<string> ListBoxItems { get; set; }
+        public Dictionary<string, Dictionary<string, string>> Data { get; set; }
+        readonly int row = 0;
+
         public MainWindow()
         {
             InitializeComponent();
 
             Data = INIParser.ReadINIFile(Path.Combine(Directory.GetCurrentDirectory(), "SampleINIFile.ini"));
-
-            ComboBoxItems = new ObservableCollection<string>();
-            ListBoxItems = new ObservableCollection<string>(Data.Keys);
             
-            DataContext = this;
-        }
-
-        private void ListBox_SelectionChanged(object sender, System.Windows.Controls.SelectionChangedEventArgs e)
-        {
-            if (ListBoxCategories.SelectedItem is string selectedKey && Data.ContainsKey(selectedKey))
+            foreach (string key in Data.Keys)
             {
-                ComboBoxItems.Clear();
-                foreach (var kvp in Data[selectedKey])
+                if (key.EndsWith("Default")) continue;
+
+                MainGrid.RowDefinitions.Add(new RowDefinition { Height = GridLength.Auto});
+
+                TextBlock keyTB = new TextBlock
                 {
-                    ComboBoxItems.Add(kvp.Key); // Add key as ComboBox item
-                }
+                    Text = key,
+                    FontSize = 16,
+                    FontWeight = FontWeights.Bold,
+                    Margin = new Thickness(5),
+                    VerticalAlignment = VerticalAlignment.Center
+                };
+                Grid.SetRow(keyTB, row);
+                Grid.SetColumn(keyTB, 0);
+                MainGrid.Children.Add(keyTB);
+
+                ComboBox valueCB = new ComboBox
+                {
+                    Margin = new Thickness(5),
+                    ItemsSource = Data[key].Keys
+                };
+                Grid.SetRow(valueCB, row);
+                Grid.SetColumn(valueCB, 1);
+                MainGrid.Children.Add(valueCB);
+
+                ++row;
             }
+
+            this.Height = row * 50;
         }
     }
 }

@@ -1,12 +1,12 @@
+C:\Users\sonny\OneDrive\Documents\GitHub\sonnylandadventure\INISelector\obj\Debug\net8.0-windows\App.g.cs
+C:\Users\sonny\OneDrive\Documents\GitHub\sonnylandadventure\INISelector\obj\Debug\net8.0-windows\INISelector_MarkupCompile.cache
 C:\Users\sonny\OneDrive\Documents\GitHub\sonnylandadventure\INISelector\bin\Debug\net8.0-windows\INISelector.exe
 C:\Users\sonny\OneDrive\Documents\GitHub\sonnylandadventure\INISelector\bin\Debug\net8.0-windows\INISelector.deps.json
 C:\Users\sonny\OneDrive\Documents\GitHub\sonnylandadventure\INISelector\bin\Debug\net8.0-windows\INISelector.runtimeconfig.json
 C:\Users\sonny\OneDrive\Documents\GitHub\sonnylandadventure\INISelector\bin\Debug\net8.0-windows\INISelector.dll
 C:\Users\sonny\OneDrive\Documents\GitHub\sonnylandadventure\INISelector\bin\Debug\net8.0-windows\INISelector.pdb
-C:\Users\sonny\OneDrive\Documents\GitHub\sonnylandadventure\INISelector\obj\Debug\net8.0-windows\MainWindow.g.cs
-C:\Users\sonny\OneDrive\Documents\GitHub\sonnylandadventure\INISelector\obj\Debug\net8.0-windows\App.g.cs
-C:\Users\sonny\OneDrive\Documents\GitHub\sonnylandadventure\INISelector\obj\Debug\net8.0-windows\INISelector_MarkupCompile.cache
 C:\Users\sonny\OneDrive\Documents\GitHub\sonnylandadventure\INISelector\obj\Debug\net8.0-windows\MainWindow.baml
+C:\Users\sonny\OneDrive\Documents\GitHub\sonnylandadventure\INISelector\obj\Debug\net8.0-windows\MainWindow.g.cs
 C:\Users\sonny\OneDrive\Documents\GitHub\sonnylandadventure\INISelector\obj\Debug\net8.0-windows\INISelector.g.resources
 C:\Users\sonny\OneDrive\Documents\GitHub\sonnylandadventure\INISelector\obj\Debug\net8.0-windows\INISelector.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\sonny\OneDrive\Documents\GitHub\sonnylandadventure\INISelector\obj\Debug\net8.0-windows\INISelector.AssemblyInfoInputs.cache

@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("INISelector")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6b495e6b5ef21924e0d06e56e01cf8681dab2ff7")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c476716f6319df136221303048c9e6f60ef4ee9b")]
 [assembly: System.Reflection.AssemblyProductAttribute("INISelector")]
 [assembly: System.Reflection.AssemblyTitleAttribute("INISelector")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
